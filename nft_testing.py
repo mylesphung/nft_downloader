@@ -34,10 +34,10 @@ print(image)
 name = data["assets"][0]["name"]
 response = requests.get(image)
 os.chdir("C:\Python/gitHub/nft/datasets/D1")
-file = open(name, "w+b")
+file = open(name, "a+b")
 file.write(response.content)
 file.close()
 im = Image.open("nft_test")
 im.show()
 
-#shutil.move("C:\Python/gitHub/nft_test", "C:\Python/gitHub/nft/datasets/D1/nft_test")
+
